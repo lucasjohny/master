@@ -1,4 +1,4 @@
-package valueObject;
+package br.com.projeto.App.repository;
 
 /**
  * @author lucas

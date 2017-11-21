@@ -29,4 +29,11 @@ public class WebService {
         conta.insere(t);
         return Response.ok("Hello from WildFly Swarm!" + t).build();
     }
+
+    @GET
+    @Produces("application/json")
+    public Response criaEstrutura() {
+        Estrutura.criarEstrutura();
+        return Response.ok("Tabelas Criadas Com Sucesso").build();
+    }
 }
